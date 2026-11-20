@@ -85,7 +85,7 @@ function update() {
   setVar("--bazaar-brightness", 1 - frame2.active * 0.255 - frame3.active * 0.06);
   setVar("--bazaar-saturation", 1 + frame3.active * 0.18);
   setVar("--shade-opacity", "1");
-  setVar("--shade-z", frame2.active > 0.02 ? "2" : "0");
+  setVar("--shade-z", "2");
   setVar("--shade-top-alpha", 0.24 + blurActive * 0.465);
   setVar("--shade-mid-alpha", 0.16 + blurActive * 0.42);
   setVar("--shade-bottom-alpha", 0.34 + blurActive * 0.51);
