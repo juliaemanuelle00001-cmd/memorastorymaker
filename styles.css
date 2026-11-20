@@ -192,6 +192,11 @@ a { color: inherit; }
   .case-card-placeholder .case-info { min-height: 220px; }
 }
 
+@media (max-width: 360px) {
+  .site-nav { flex-wrap: wrap; overflow-x: visible; row-gap: 10px; }
+  .site-nav a { white-space: nowrap; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .scene-img, .back-stack, .hero-title, .intro-copy, .story-panel, .sights-track, .sights-slider { transition: none; }
