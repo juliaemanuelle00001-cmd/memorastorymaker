@@ -5,4 +5,4 @@
 - [x] **Coreografia de scroll:** sticky stage com título MOSTAR, parallax de ponteiro, suavização de scroll, camadas de céu/back-stack/bridge/splitframes/river/shade e transições de zoom, deslocamento, escala, opacidade, blur, brilho e saturação nos intervalos definidos.
 - [x] **Slider infinito de sights:** cinco cards com pins remotos, três conjuntos clonados, seleção por clique e teclado, botões previous/next, transição cúbica de 640ms e normalização contínua.
 - [x] **Responsividade e acessibilidade de movimento:** breakpoints desktop/tablet/mobile e bypass de suavização/parallax com `prefers-reduced-motion`.
-- [x] **Preview e rotas:** manifesto `manus-routes.json` servido na raiz e servidor estático configurado para o Preview do projeto.
+- [x] **Preview, rotas e empacotamento:** manifesto `manus-routes.json` servido na raiz, servidor estático configurado para o Preview do projeto e build self-contained declarado para copiar os arquivos vanilla para `public/`.
