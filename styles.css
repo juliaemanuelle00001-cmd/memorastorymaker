@@ -109,6 +109,28 @@ a { color: inherit; }
 .note-button { min-height: 50px; display: inline-flex; align-items: center; justify-content: center; gap: 12px; margin-top: 28px; padding: 0 28px; border-radius: 999px; color: #ffffff; background: #000000; box-shadow: 0 16px 34px rgba(0, 0, 0, 0.18); pointer-events: auto; cursor: pointer; }
 .note-button span:first-child { font-size: 1.25rem; line-height: 1; }
 
+.cases-section { position: relative; z-index: 20; padding: clamp(88px, 12vw, 170px) clamp(24px, 8vw, 128px) 120px; color: #111111; background: #ffffff; }
+.cases-heading { display: grid; grid-template-columns: minmax(180px, 0.62fr) minmax(0, 1.38fr); column-gap: clamp(32px, 6vw, 96px); align-items: end; width: min(1200px, 100%); margin: 0 auto 68px; }
+.section-eyebrow, .case-label { margin: 0; color: #666666; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; line-height: 1.1; text-transform: uppercase; }
+.cases-heading .section-eyebrow { align-self: start; padding-top: 12px; }
+.cases-heading h2 { grid-column: 2; max-width: 760px; margin: 0; color: #111111; font-size: clamp(3rem, 6vw, 6.5rem); font-weight: 800; letter-spacing: -0.07em; line-height: 0.9; }
+.cases-heading > p:not(.section-eyebrow) { grid-column: 2; max-width: 540px; margin: 28px 0 0; color: #4f4f4f; font-size: 1.05rem; line-height: 1.4; }
+.cases-cta { grid-column: 2; display: inline-flex; align-items: center; justify-content: space-between; width: fit-content; min-width: 230px; gap: 26px; margin-top: 28px; padding: 15px 18px; color: #ffffff; background: #000000; font-size: 0.9rem; text-decoration: none; transition: background 180ms ease, transform 180ms ease; }
+.cases-cta:hover, .cases-cta:focus-visible { background: #262626; transform: translateY(-2px); }
+.cases-cta span { font-size: 1.1rem; }
+.cases-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; width: min(1200px, 100%); margin: 0 auto; background: #e5e5e5; border-top: 1px solid #e5e5e5; }
+.case-card { min-width: 0; background: #ffffff; }
+.case-card-featured { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1.28fr) minmax(280px, 0.72fr); }
+.case-media { min-height: 360px; background: #0a0a0a; }
+.case-video { display: block; width: 100%; height: 100%; min-height: 360px; object-fit: cover; object-position: center; background: #0a0a0a; }
+.case-info { display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-end; min-height: 250px; padding: clamp(24px, 4vw, 56px); }
+.case-info h3 { max-width: 440px; margin: 18px 0 0; color: #111111; font-size: clamp(2rem, 3.2vw, 4rem); font-weight: 800; letter-spacing: -0.06em; line-height: 0.94; }
+.case-info > p:last-child { max-width: 390px; margin: 18px 0 0; color: #555555; font-size: 0.98rem; line-height: 1.4; }
+.case-placeholder-art { display: flex; align-items: center; justify-content: center; min-height: 260px; color: #ffffff; background: radial-gradient(circle at 74% 22%, #777777 0%, #2a2a2a 34%, #0a0a0a 70%); }
+.case-placeholder-art-light { color: #111111; background: radial-gradient(circle at 28% 30%, #ffffff 0%, #c8c8c8 34%, #686868 100%); }
+.case-placeholder-art span { font-size: clamp(4rem, 8vw, 8rem); font-weight: 800; letter-spacing: -0.08em; line-height: 1; opacity: 0.82; }
+.case-card-placeholder .case-info { min-height: 260px; }
+
 @media (max-width: 1500px) {
   .hero-title { font-size: clamp(3.6rem, 6vw, 6.5rem); }
   .story-panel h2 { font-size: 4.1rem; }
@@ -150,6 +172,14 @@ a { color: inherit; }
   .sight-card p { max-width: 100%; margin-top: 10px; }
   .sight-kicker { margin-bottom: 56px; }
   .sight-pin { top: 24px; right: 24px; width: 57.6px; height: 57.6px; }
+  .cases-section { padding: 84px 24px 88px; }
+  .cases-heading { display: block; margin-bottom: 48px; }
+  .cases-heading h2 { margin-top: 18px; font-size: clamp(3rem, 14vw, 4.7rem); }
+  .cases-heading > p:not(.section-eyebrow) { margin-top: 22px; }
+  .cases-grid { grid-template-columns: 1fr; }
+  .case-card-featured { display: block; }
+  .case-media, .case-video { min-height: 360px; }
+  .case-card-placeholder .case-info { min-height: 220px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
