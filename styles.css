@@ -107,7 +107,7 @@ a { color: inherit; }
 .facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 86px; width: min(470px, 100%); margin: 72px auto 0; }
 .facts dt { color: #ffffff; font-family: "Ogg Medium", Georgia, serif; font-size: 4.2rem; font-weight: 500; line-height: 0.9; text-shadow: 0 14px 34px var(--shadow); }
 .facts dd { margin: 18px 0 0; color: #ffffff; font-size: 1rem; font-weight: 500; line-height: 1.14; text-shadow: 0 2px 18px rgba(0, 0, 0, 0.42); }
-.note-button { min-height: 50px; display: inline-flex; align-items: center; justify-content: center; gap: 12px; margin-top: 28px; padding: 0 28px; border-radius: 999px; color: #ffffff; background: #000000; box-shadow: 0 16px 34px rgba(0, 0, 0, 0.18); pointer-events: auto; cursor: pointer; }
+.note-button { min-height: 50px; display: inline-flex; align-items: center; justify-content: center; gap: 12px; margin-top: 28px; padding: 0 28px; border-radius: 999px; color: #ffffff; background: #000000; box-shadow: 0 16px 34px rgba(0, 0, 0, 0.18); pointer-events: auto; cursor: pointer; text-decoration: none; }
 .note-button span:first-child { font-size: 1.25rem; line-height: 1; }
 
 .cases-section { position: relative; z-index: 20; padding: clamp(88px, 12vw, 170px) clamp(24px, 8vw, 128px) 120px; color: #111111; background: #ffffff; }
