@@ -204,6 +204,29 @@ function normalizeSightSlider() {
   }
 }
 
+function trackAnalyticsEvent(name, params) {
+  if (typeof window.gtag === "function") window.gtag("event", name, params);
+}
+
+document.querySelectorAll('a[href*="wa.me"]').forEach((link) => {
+  link.addEventListener("click", () => {
+    trackAnalyticsEvent("generate_lead", {
+      method: "whatsapp",
+      link_location: link.id === "contact" ? "story_panel" : "cases_section",
+    });
+  });
+});
+
+document.querySelectorAll('a[href*="instagram.com"]').forEach((link) => {
+  link.addEventListener("click", () => {
+    trackAnalyticsEvent("select_content", {
+      content_type: "social_link",
+      item_id: "instagram",
+      link_location: "site_header",
+    });
+  });
+});
+
 window.addEventListener("scroll", requestTick, { passive: true });
 window.addEventListener("resize", () => {
   updateSightSlider();
